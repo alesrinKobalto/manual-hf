@@ -1,0 +1,92 @@
+COOPERATIVA ELÉCTRICA VALLE VERDE
+Tarifas vigentes · Ejercicio 2026
+
+Documento ficticio, escrito para el libro «Crea tu propia IA». Los precios son inventados.
+
+1. Tarifa doméstica 2.0TD
+
+La tarifa 2.0TD es la única disponible para potencias contratadas de hasta 15 kW, que son
+prácticamente todos los suministros domésticos. Tiene dos franjas de potencia y tres de
+energía.
+
+Términos de potencia:
+  Punta: 0,0812 € por kW y día
+  Valle: 0,0105 € por kW y día
+
+Términos de energía:
+  Punta: 0,189 € por kWh
+  Llano: 0,142 € por kWh
+  Valle: 0,098 € por kWh
+
+2. Las franjas horarias
+
+El tramo de punta va de 10:00 a 14:00 y de 18:00 a 22:00 de lunes a viernes. El tramo llano
+ocupa el resto de las horas de los días laborables. El tramo de valle va de 00:00 a 08:00 de
+lunes a viernes y, además, todas las horas de los sábados, los domingos y los festivos de
+ámbito nacional.
+
+La hora que cuenta es la hora oficial peninsular, y el cambio de hora de marzo y de octubre
+no modifica los tramos: lo que cambia es la hora del reloj.
+
+3. Qué hay dentro de cada precio
+
+Cada uno de los precios de la lista anterior suma tres cosas: el peaje de transporte y
+distribución que fija la Administración, los cargos del sistema y el coste de la energía que
+la cooperativa compra en el mercado mayorista. La cooperativa no decide las dos primeras.
+
+Esa es la razón de que una bajada del mercado mayorista no se note entera en la factura: la
+parte regulada del precio no se mueve con el mercado.
+
+4. Potencias más habituales
+
+  Vivienda de hasta 70 m2 sin cocina eléctrica: 3,45 kW
+  Vivienda de hasta 120 m2 con cocina eléctrica: 4,60 kW
+  Vivienda con bomba de calor o punto de recarga: 5,75 kW
+  Local pequeño con aire acondicionado: 6,90 kW
+
+Son orientaciones, no obligaciones: la potencia que hay que contratar es la que soporta el
+arranque simultáneo de los aparatos que de verdad se usan a la vez. Contratar de más se paga
+todos los días del año; contratar de menos hace saltar el interruptor de control de potencia.
+
+5. Alquiler del equipo de medida
+
+El alquiler del contador de telegestión monofásico es de 0,81 € al mes. El trifásico, de
+1,36 € al mes. Es un precio regulado: no lo fija la cooperativa y aparece en la factura como
+un concepto aparte.
+---PAGINA---
+6. Tarifa para pequeños negocios
+
+Los suministros de más de 15 kW y hasta 50 kW usan la tarifa 3.0TD, con seis periodos de
+potencia y seis de energía, cuyos precios se publican cada trimestre en la oficina virtual.
+
+El paso de 2.0TD a 3.0TD no es una elección comercial: lo determina la potencia contratada.
+
+7. Lo que cuesta cambiar de potencia
+
+El primer cambio de potencia de cada periodo de doce meses es gratuito. Un segundo cambio
+dentro de esos doce meses tiene un coste de 10,72 € por cada kilovatio de diferencia.
+
+Si lo que se pide es bajar la potencia, no hay derechos de extensión ni de acceso: solo el
+posible recargo por segundo cambio. Al subir la potencia por encima de la que nunca se ha
+tenido contratada en ese punto sí se devengan derechos de acceso, que la distribuidora
+factura aparte.
+
+8. Precios de los servicios más pedidos
+
+  Reconexión tras suspensión por impago: 18,50 €
+  Verificación del contador cuando funciona bien: 23,40 €
+  Verificación del contador cuando está defectuoso: gratuita
+  Cambio de titular: gratuito
+  Cambio de tarifa, una vez cada doce meses: gratuito
+  Aportación mínima al capital social: 60 €
+
+9. Impuestos aplicables
+
+El impuesto especial sobre la electricidad se aplica con un tipo del 5,11 % sobre la suma
+del término de potencia y el término de energía. El IVA aplicable es del 21 % y se calcula al
+final, sobre una base que ya incluye el impuesto especial y el alquiler del equipo de medida.
+
+10. Vigencia y revisión
+
+Las tarifas de este documento las aprueba la asamblea ordinaria para todo el ejercicio y no
+se revisan a mitad de año, salvo que un cambio normativo obligue a ello.

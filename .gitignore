@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.venv/
+venv/
+
+# Derivados que se regeneran: el índice de embeddings y el adaptador entrenado.
+# El dataset NO va aquí: los PDF, sft.jsonl y eval.jsonl se versionan a propósito,
+# porque son lo que el libro promete y lo que las pruebas comprueban.
+indice/
+asistente-cooperativa-lora/
+*.safetensors

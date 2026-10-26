@@ -1,0 +1,86 @@
+COOPERATIVA ELÉCTRICA VALLE VERDE
+Guía para entender tu factura · Edición 2026
+
+Documento ficticio, escrito para el libro «Crea tu propia IA».
+
+1. Las dos mitades de lo que pagas
+
+Una factura eléctrica tiene dos grandes bloques. El término de potencia se paga aunque no se
+encienda nada: depende de los kilovatios contratados y de los días del periodo. El término
+de energía depende de los kilovatios hora que de verdad se han consumido.
+
+Por eso una vivienda vacía recibe factura: el término de potencia no se interrumpe.
+
+2. Cómo se calcula el término de potencia
+
+Se multiplica la potencia contratada en cada franja por el precio de esa franja y por el
+número de días facturados. En la tarifa doméstica hay dos franjas de potencia, punta y
+valle, y se pueden contratar valores distintos en cada una.
+
+Ejemplo con 4,6 kW contratados en las dos franjas y un periodo de 30 días: la parte de punta
+suma 4,6 × 0,0812 × 30 = 11,21 € y la parte de valle, 4,6 × 0,0105 × 30 = 1,45 €.
+
+3. Cómo se calcula el término de energía
+
+Se multiplica la energía consumida en cada franja horaria por el precio de la franja. La
+factura desglosa los kilovatios hora de punta, llano y valle, con la lectura inicial y la
+lectura final que los han producido.
+
+Ejemplo con 180 kWh en el periodo, repartidos en 40 kWh de punta, 70 de llano y 70 de valle:
+40 × 0,189 = 7,56 €, más 70 × 0,142 = 9,94 €, más 70 × 0,098 = 6,86 €. En total, 24,36 € de
+término de energía.
+
+Conviene fijarse en el reparto por franjas más que en el total: dos viviendas con el mismo
+consumo pueden pagar importes muy distintos según la hora en la que lo consumen.
+
+4. Impuestos y conceptos regulados
+
+Sobre la suma de potencia y energía se aplica el impuesto especial sobre la electricidad, con
+un tipo del 5,11 %. Después se suma el alquiler del equipo de medida y, sobre el total
+resultante, el IVA del 21 %.
+
+El orden importa: el IVA se calcula al final, sobre una base que ya incluye el impuesto
+especial y el alquiler del contador.
+
+Sobre el ejemplo anterior: 11,21 € más 1,45 € de potencia y 24,36 € de energía suman 37,02 €.
+El impuesto especial es 37,02 × 0,0511 = 1,89 €. Con 0,81 € de alquiler del equipo, la base
+del IVA es 39,72 €, el IVA es 8,34 € y el total de la factura, 48,06 €.
+---PAGINA---
+5. Dónde está cada dato en el papel
+
+En la cabecera figuran el número de factura, el periodo facturado y la fecha de cargo. En el
+bloque central aparece el desglose por conceptos. Al pie se indican la potencia contratada en
+cada franja, el consumo del mismo periodo del año anterior y el consumo medio diario.
+
+El código universal del punto de suministro aparece siempre en la primera página, arriba a la
+derecha, y es el dato que hay que indicar en cualquier gestión.
+
+6. La lectura del contador
+
+Los equipos de telegestión envían la lectura sin que nadie tenga que ir a la vivienda, así
+que todas las facturas son de lectura real. La curva horaria de los últimos doce meses se
+puede descargar en la oficina virtual en formato de hoja de cálculo.
+
+Cuando la comunicación con el contador falla, la cooperativa factura con una estimación
+basada en el consumo del mismo mes del año anterior y lo indica con la palabra «estimada»
+junto al periodo. En la factura siguiente se regulariza la diferencia.
+
+Si la lectura que marca el equipo no coincide con la de la factura, se puede pedir una
+verificación del contador. La verificación es gratuita si el equipo resulta estar mal, y
+cuesta 23,40 € si funciona correctamente.
+
+7. Periodicidad y forma de pago
+
+La facturación es mensual. La domiciliación bancaria es la forma de pago habitual, y se
+puede cambiar la cuenta en la oficina virtual con efecto en la factura siguiente.
+
+Quien lo prefiera puede pagar con transferencia o en la oficina de la cooperativa, siempre
+antes de la fecha de vencimiento que figura en la factura.
+
+8. Qué hacer si un importe no cuadra
+
+Antes de reclamar conviene comprobar tres cosas: que el periodo facturado no sea más largo
+de lo habitual, que la factura no sea estimada y que la potencia contratada que figura al pie
+sea la que se solicitó. La mayoría de las dudas se resuelven con esos tres datos.
+
+Si después de esas comprobaciones el importe sigue sin cuadrar, se abre una reclamación.

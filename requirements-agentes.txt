@@ -1,0 +1,9 @@
+# Entorno aparte para el apartado 15.3: el cliente MCP de smolagents, a fecha del
+# libro, pasa por `mcpadapt`, que todavía no admite `mcp` 2.x. El propio libro lo
+# dice y es el tipo de incompatibilidad que vigila la integración continua.
+#
+# No mezclar con requirements.txt: ahí mcp va fijado en 2.3.0, que es la versión
+# con la que está escrito el servidor del capítulo 15.
+
+smolagents[mcp]==1.26.0
+mcp<2

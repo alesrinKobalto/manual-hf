@@ -1,0 +1,39 @@
+name: Fallo en el código
+description: Un script o un cuaderno que no funciona, o que ya no funciona con las versiones nuevas
+title: "[Código] "
+labels: ["codigo"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Las incompatibilidades por un cambio de versión son lo más frecuente, y son
+        exactamente lo que buscan las pruebas automáticas del repositorio. Si puede,
+        pegue la salida de `pip list | grep -E 'transformers|trl|peft|datasets'`.
+  - type: input
+    id: donde
+    attributes:
+      label: Script o cuaderno
+      placeholder: "entrenar.py, o el cuaderno del capítulo 7"
+    validations:
+      required: true
+  - type: textarea
+    id: comando
+    attributes:
+      label: Qué ejecutó
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: error
+    attributes:
+      label: Qué salió
+      description: El mensaje completo, con el traceback si lo hay.
+      render: shell
+    validations:
+      required: true
+  - type: textarea
+    id: entorno
+    attributes:
+      label: Entorno
+      description: Sistema, Python, versiones de las librerías y si hay GPU (y cuál).
+      placeholder: "Kaggle, Python 3.11, T4, transformers 5.19.0, trl 1.15.0"

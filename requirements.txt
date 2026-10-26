@@ -1,0 +1,37 @@
+# Versiones del libro «Crea tu propia IA» (Kobalto Educación).
+#
+# Las once primeras son las que el libro fija en sus primeras páginas y con las que
+# se obtuvieron las salidas impresas, en octubre de 2026. Las de abajo son las
+# auxiliares que aparecen en los `pip install` de los capítulos.
+#
+# Para el dataset y las pruebas de este repositorio no hace falta nada de esto:
+# basta `pip install -r requirements-datos.txt`, que son tres paquetes y corre en CPU.
+
+transformers==5.19.0
+trl==1.15.0
+peft==0.21.2
+datasets==5.1.0
+sentence-transformers==6.1.0
+smolagents==1.26.0
+diffusers==0.41.0
+gradio==6.30.0
+onnxruntime==1.31.0
+
+# El capítulo 15 monta un servidor MCP propio con mcp 2.3 y explica por qué usa
+# `ToolError` y no `ValueError`. Pero la integración de smolagents con MCP, a fecha
+# del libro, exige `mcp<2`: son dos entornos distintos y no caben en el mismo
+# fichero. Para esa combinación, `requirements-agentes.txt`.
+mcp==2.3.0
+
+# transformers.js 4.3.1 es JavaScript y no se instala con pip: va en el `package.json`
+# del ejemplo del capítulo 17 (IA en el navegador).
+
+# ── auxiliares de los capítulos ──────────────────────────────────────────────
+torch>=2.14,<3            # la rueda concreta depende de la CPU/GPU: ver pytorch.org
+accelerate==1.15.0
+bitsandbytes==0.50.2      # cuantización de 4 y 8 bits; solo con GPU NVIDIA
+pypdf==6.21.2             # extracción de texto de los PDF (capítulo 6)
+pillow==13.0.0
+librosa==1.0.0            # ejemplo 6: transcripción de audio (necesita ffmpeg)
+sentencepiece==0.2.2
+scikit-learn==1.9.1

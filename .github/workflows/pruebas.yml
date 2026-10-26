@@ -1,0 +1,48 @@
+# Primera capa de validación del anexo B: «en cada cambio y cada lunes».
+name: pruebas
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  schedule:
+    - cron: "0 6 * * 1"      # todos los lunes a las 06:00 UTC
+  workflow_dispatch:
+
+jobs:
+  dataset:
+    # Lo que se puede comprobar sin modelos y sin GPU: el dataset entero, los
+    # generadores, la línea base BM25, los cuadernos y las cifras que el libro
+    # publica. Tarda segundos, así que corre en cada cambio.
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python: ["3.11", "3.12"]
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: ${{ matrix.python }}
+      - name: Instalar lo mínimo
+        run: pip install -r requirements-datos.txt
+      - name: Validar el dataset
+        run: python herramientas/valida_dataset.py
+      - name: Línea base del recuperador
+        run: |
+          python datos/cooperativa/linea_base_bm25.py
+          python datos/cooperativa/linea_base_bm25.py --documento-completo
+      - name: Pruebas
+        run: pytest -q
+
+  versiones:
+    # Lo que puede romper el libro sin que nadie toque nada: una versión nueva.
+    # No instala las librerías: pregunta a PyPI. Solo los lunes y a mano.
+    if: github.event_name == 'schedule' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Comparar lo fijado con PyPI
+        run: python herramientas/vigila_versiones.py --estricto

@@ -1,0 +1,53 @@
+name: Errata
+description: Un dato, una cifra, una cita o un código del libro que no es correcto
+title: "[Errata] "
+labels: ["errata"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Gracias por avisar. Las cuatro casillas de abajo son las que pide el anexo B
+        del libro, y con las cuatro una errata se puede resolver sin preguntar nada más.
+
+        Si lo que falla es el **código** y no el texto, abra una incidencia de tipo
+        «Fallo en el código». Si lo que no entiende es una explicación, sin que haya
+        nada incorrecto, use «Explicación confusa»: eso no es una errata y se trata
+        de otra manera.
+  - type: input
+    id: capitulo
+    attributes:
+      label: Capítulo
+      description: Número y, si puede, el apartado. El 3B y los anexos A y B también valen.
+      placeholder: "Capítulo 8, apartado 8.3"
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: Texto actual
+      description: Copie la frase tal como aparece, aunque sea larga. Sin reescribirla.
+      placeholder: "«un buscador clásico BM25 sin lista de palabras vacías obtiene Recall@1 = ...»"
+    validations:
+      required: true
+  - type: textarea
+    id: problema
+    attributes:
+      label: Problema
+      description: Qué está mal y, si lo tiene, con qué fuente se comprueba.
+      placeholder: "La cifra no coincide con la que da el script del repositorio: ..."
+    validations:
+      required: true
+  - type: textarea
+    id: propuesta
+    attributes:
+      label: Propuesta
+      description: Cómo debería quedar. Si no está seguro, dígalo: con el problema bien descrito basta.
+      placeholder: "«... obtiene Recall@1 = 30,0 % (18/60)»"
+    validations:
+      required: true
+  - type: input
+    id: edicion
+    attributes:
+      label: Edición
+      description: La que figura en las primeras páginas del libro. Si no la encuentra, deje la casilla vacía.
+      placeholder: "octubre de 2026"

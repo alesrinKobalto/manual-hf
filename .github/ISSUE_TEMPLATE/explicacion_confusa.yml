@@ -1,0 +1,34 @@
+name: Explicación confusa
+description: Un párrafo, un ejercicio o un diagrama que no se entiende, sin que haya ningún dato incorrecto
+title: "[Claridad] "
+labels: ["claridad"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Esto no es una errata y no se trata igual: alimenta la capa de lectores beta
+        del anexo B, que mide dónde se atasca la gente antes de cada edición. El
+        protocolo está en `docs/lectores_beta.md`.
+  - type: input
+    id: capitulo
+    attributes:
+      label: Capítulo y apartado
+    validations:
+      required: true
+  - type: textarea
+    id: donde
+    attributes:
+      label: Dónde se atascó
+      description: La frase o el paso concreto donde dejó de seguir el hilo.
+    validations:
+      required: true
+  - type: textarea
+    id: intento
+    attributes:
+      label: Qué entendió usted
+      description: Muy útil: saber qué se entiende por error dice cómo hay que reescribirlo.
+  - type: dropdown
+    id: claridad
+    attributes:
+      label: Claridad del capítulo, de 1 a 5
+      options: ["1", "2", "3", "4", "5"]

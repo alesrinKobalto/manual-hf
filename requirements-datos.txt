@@ -1,0 +1,12 @@
+# Lo único que hace falta para generar y validar el dataset de la cooperativa y
+# para pasar las pruebas. Sin modelos, sin GPU, sin descargar nada: dos segundos.
+#
+#     pip install -r requirements-datos.txt
+#     python datos/cooperativa/genera_pdf.py
+#     python datos/cooperativa/genera_sft.py
+#     python herramientas/valida_dataset.py
+#     pytest
+
+reportlab==5.1.0          # genera los seis PDF a partir de documentos/fuente/*.txt
+pypdf==6.21.2             # extrae su texto, como en el capítulo 6
+pytest==9.1.1

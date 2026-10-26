@@ -1,0 +1,1005 @@
+{
+ "sistema": "Eres el asistente de atención al socio de la cooperativa eléctrica.",
+ "intenciones": [
+  {
+   "id": "cobro_duplicado",
+   "preguntas": [
+    "Me han cobrado dos veces la factura de agosto",
+    "En el banco me aparecen dos cargos iguales del recibo de la luz este mes",
+    "Hola, creo que se me ha pasado el mismo recibo por duplicado",
+    "Buenos días: tengo repetido el importe de la factura de septiembre en mi cuenta",
+    "¿Por qué me habéis pasado el recibo dos veces?",
+    "Se ha duplicado el cargo de la luz y me ha dejado la cuenta en números rojos",
+    "Perdonad, el recibo de octubre lo tengo dos veces en el extracto",
+    "Me acaba de llegar un aviso del banco: parece que el mismo importe se ha cobrado dos veces",
+    "Tengo un problema, el cargo de la electricidad está repetido en la misma fecha",
+    "Reviso el extracto y veo el importe de la factura cobrado dos veces seguidas"
+   ],
+   "respuestas": [
+    "Lamento la incidencia. Para revisarlo necesito el número de contrato y la fecha del cargo. Si se confirma que es un cobro repetido, la devolución se ordena en las cuarenta y ocho horas siguientes a la comprobación, sin esperar a que se resuelva formalmente la reclamación.",
+    "Siento el error. Indíqueme el número de contrato y la fecha en la que aparece el segundo cargo y lo compruebo ahora mismo. El importe duplicado se devuelve a la misma cuenta en la que se cargó.",
+    "Entiendo la molestia. Con el número de contrato y la fecha del cargo puedo comprobarlo. Si se trata de un duplicado, se ordena la devolución en cuarenta y ocho horas y no hace falta esperar a la resolución de la reclamación."
+   ]
+  },
+  {
+   "id": "devolucion_plazo",
+   "preguntas": [
+    "¿Cuánto vais a tardar en devolverme el dinero del cobro repetido?",
+    "Ya habéis confirmado el duplicado, ¿cuándo veré el abono en la cuenta?",
+    "¿En qué plazo me reintegráis el importe que se cobró dos veces?",
+    "Me dijeron que estaba comprobado, pero el dinero no ha vuelto todavía",
+    "¿Tengo que esperar a que termine la reclamación para que me devuelvan lo cobrado de más?",
+    "¿Me lo vais a descontar de la siguiente factura o me lo ingresáis?",
+    "Quería saber cuándo recupero el importe duplicado",
+    "Llevo tres días esperando la devolución del segundo cargo, ¿es normal?",
+    "¿La devolución entra en la misma cuenta del recibo?",
+    "¿Cuándo se ordena el abono una vez que lo habéis visto?"
+   ],
+   "respuestas": [
+    "La devolución se ordena en las cuarenta y ocho horas siguientes a la comprobación, y el importe vuelve a la misma cuenta en la que se cargó. No se compensa en la factura siguiente salvo que usted lo pida expresamente.",
+    "No hay que esperar a la resolución de la reclamación: en cuanto se comprueba el duplicado, el abono se ordena en cuarenta y ocho horas, a la cuenta del recibo.",
+    "El plazo es de cuarenta y ocho horas desde la comprobación. Si prefiere que se compense en la próxima factura en lugar de recibir el ingreso, dígamelo y lo anoto."
+   ]
+  },
+  {
+   "id": "datos_para_reclamar",
+   "preguntas": [
+    "¿Qué datos tengo que daros para abrir una reclamación?",
+    "Quiero reclamar un importe, ¿qué información hace falta?",
+    "¿Necesito adjuntar la factura para que me la reviséis?",
+    "¿Hace falta mandar el papel de la factura escaneado?",
+    "¿Qué tengo que escribir exactamente en la reclamación?",
+    "Voy a presentar una queja por un importe, ¿me pedís algún documento?",
+    "¿Con el número de contrato es suficiente para reclamar?",
+    "¿Tengo que explicar mucho o basta con el concepto que discuto?",
+    "Me gustaría reclamar una factura; dígame qué necesita de mí",
+    "¿Qué debe incluir el escrito para que no me lo devuelvan incompleto?"
+   ],
+   "respuestas": [
+    "Basta con el número de contrato, el concepto que se discute, el importe y el motivo en dos o tres líneas. No hace falta adjuntar la factura: la cooperativa ya la tiene.",
+    "Con el número de contrato, el importe y una explicación breve del motivo es suficiente. La factura no es necesaria, ya está en nuestro sistema.",
+    "No hace falta aportar la factura. Sí el número de contrato, el concepto, el importe y el motivo. Si lo que discute es una lectura, conviene añadir una fotografía del display del equipo con la fecha visible."
+   ]
+  },
+  {
+   "id": "recibo_devuelto_reintento",
+   "preguntas": [
+    "Mi banco rechazó el recibo y después lo cargasteis de nuevo",
+    "Tengo dos cargos separados por quince días del mismo importe, ¿qué ha pasado?",
+    "Me rechazó el recibo el banco y ahora aparece otra vez cobrado",
+    "¿Por qué se intenta cobrar otra vez un recibo que había salido devuelto?",
+    "Veo el mismo importe dos veces pero con quince días de diferencia",
+    "¿Cuántas veces intentáis cobrar un recibo que ha fallado?",
+    "No tenía saldo el día del cargo y ahora me lo habéis vuelto a pasar, ¿es correcto?",
+    "¿Es un duplicado si las fechas no coinciden?",
+    "Me ha llegado el cobro repetido, aunque uno de los dos lo devolvió mi banco",
+    "Quería entender por qué hay un segundo intento de cobro del mismo recibo"
+   ],
+   "respuestas": [
+    "No es un cobro repetido: es el reintento previsto en las condiciones del contrato, que se hace una sola vez a los quince días del primer intento. Se distingue del duplicado precisamente porque las fechas están separadas y el importe es el mismo.",
+    "Un recibo devuelto genera un único reintento a los quince días. Por eso ve dos cargos con esa separación. Si los dos cargos estuvieran en la misma fecha, sí sería un duplicado y se devolvería en cuarenta y ocho horas.",
+    "Es el reintento normal tras la devolución bancaria: solo se hace una vez, quince días después. Si el primer cargo fue devuelto, en su cuenta solo debería quedar efectivo el segundo."
+   ]
+  },
+  {
+   "id": "plazo_reclamar_cinco_anos",
+   "preguntas": [
+    "Me ha aparecido un cargo extraño del año 2023, ¿puedo discutirlo todavía?",
+    "¿Hasta cuándo se puede pedir la revisión de una factura antigua?",
+    "¿Cuántos años atrás puedo discutir un importe?",
+    "Revisando papeles viejos he visto algo que no cuadra de 2023, ¿sirve de algo reclamar?",
+    "¿Prescribe la reclamación de un importe mal facturado?",
+    "Tengo una factura de hace cuatro años con un concepto que no entiendo, ¿puedo reclamar?",
+    "¿Qué plazo tengo desde que se emitió la factura?",
+    "¿Es demasiado tarde para reclamar un recibo de hace dos años y medio?",
+    "¿Cuál es el límite temporal para pedir que reviséis un importe?",
+    "Me gustaría reclamar algo antiguo; ¿hay fecha de caducidad?"
+   ],
+   "respuestas": [
+    "El plazo para reclamar un importe que se considera facturado de forma indebida es de cinco años contados desde la fecha de emisión de la factura. Dentro de ese plazo se revisa sin problema.",
+    "Hay cinco años desde la emisión de la factura. Pasado ese plazo la cooperativa ya no puede revisar el importe, así que conviene no dejarlo.",
+    "Sí llega a tiempo: el límite son cinco años desde la fecha de emisión. Indíqueme el número de contrato y el periodo de la factura y la reviso."
+   ]
+  },
+  {
+   "id": "acuse_recibo",
+   "preguntas": [
+    "¿Cómo sabré que habéis recibido mi reclamación?",
+    "He mandado una reclamación y no he recibido confirmación, ¿es normal?",
+    "¿Me vais a contestar diciendo que la habéis registrado?",
+    "¿Cuándo me llega el acuse de recibo de la queja?",
+    "¿En cuánto tiempo confirmáis la entrada de una reclamación?",
+    "No sé si mi escrito ha llegado, ¿hay alguna forma de verlo?",
+    "¿Recibo un número de expediente al presentar la reclamación?",
+    "Presenté la reclamación el lunes y sigo sin saber nada",
+    "¿Tengo que llamar para confirmar que la habéis registrado?",
+    "¿Queda constancia de la fecha en la que entré la reclamación?"
+   ],
+   "respuestas": [
+    "La cooperativa acusa recibo de toda reclamación en el plazo de cinco días hábiles. Además, cada reclamación recibe un número de expediente en el momento de su entrada, y puede consultar su estado en la oficina virtual.",
+    "Sí: en cinco días hábiles como máximo recibirá el acuse de recibo. El número de expediente se asigna al entrar, y con él puede seguir la tramitación desde la oficina virtual.",
+    "El acuse llega en cinco días hábiles. Si prefiere comprobarlo antes, en la oficina virtual aparece el expediente con su fecha de entrada."
+   ]
+  },
+  {
+   "id": "plazo_resolucion",
+   "preguntas": [
+    "¿Cuánto es lo máximo que podéis tardar en resolver?",
+    "¿Cuánto tarda la cooperativa en resolver una queja económica?",
+    "¿En cuánto tiempo tendré una respuesta definitiva?",
+    "Llevo tres semanas esperando la resolución, ¿cuánto queda?",
+    "¿Hay un plazo máximo legal para responderme?",
+    "¿Cuándo sabré si me dais la razón o no?",
+    "¿Cuánto se alarga normalmente esto?",
+    "Me dijeron que estaba en estudio, pero no me dieron fecha",
+    "¿Un mes es el máximo o puede ir a más?",
+    "¿Desde cuándo cuenta el plazo de respuesta, desde que escribo o desde que lo registráis?"
+   ],
+   "respuestas": [
+    "La reclamación se resuelve en el plazo máximo de un mes desde su entrada. Si hace falta una comprobación en la vivienda o un informe de la distribuidora, el plazo se amplía a dos meses y se le comunica el motivo por escrito.",
+    "El plazo cuenta desde la entrada en el registro y es de un mes como máximo. Solo se amplía a dos meses cuando se necesita una comprobación en la vivienda o un informe de la empresa distribuidora.",
+    "Un mes desde la entrada. Si en su caso se ha pedido un informe a la distribuidora, el plazo pasa a dos meses y debería haber recibido un escrito explicándolo; si no lo tiene, lo compruebo."
+   ]
+  },
+  {
+   "id": "ampliacion_plazo",
+   "preguntas": [
+    "Me habéis escrito diciendo que tardaréis más, ¿por qué?",
+    "¿En qué casos os tomáis dos meses en vez de uno?",
+    "¿Qué significa que hace falta un informe de la distribuidora?",
+    "Me han ampliado el plazo de la reclamación y no entiendo el motivo",
+    "¿Podéis alargar el plazo sin avisarme?",
+    "¿Cuándo se necesita una visita a casa para resolver una reclamación?",
+    "¿Hay un segundo plazo si el primero no basta?",
+    "¿Por qué mi reclamación tarda más que la de mi vecino?",
+    "¿Me tenéis que explicar por escrito la ampliación?",
+    "¿Dos meses es ya el máximo absoluto?"
+   ],
+   "respuestas": [
+    "El plazo se amplía a dos meses solo cuando la resolución exige una comprobación en la vivienda o un informe de la empresa distribuidora, y la cooperativa está obligada a comunicarle el motivo por escrito. No hay un tercer plazo.",
+    "La ampliación a dos meses es para los casos en los que hay que mirar algo en la vivienda o esperar a la distribuidora. Siempre se comunica por escrito con el motivo; si no lo ha recibido, dígame el número de expediente.",
+    "Sucede cuando la comprobación no se puede hacer desde la oficina. El plazo pasa de un mes a dos, se le explica por escrito y no se puede estirar más."
+   ]
+  },
+  {
+   "id": "intereses_durante_reclamacion",
+   "preguntas": [
+    "Mientras discutimos el importe, ¿me vais cobrando intereses?",
+    "¿Tengo que pagar la parte que estoy reclamando?",
+    "¿Me podéis cortar la luz por el importe que estoy discutiendo?",
+    "¿Qué pasa con el recibo que he reclamado, lo pago o no?",
+    "He reclamado una factura entera, ¿se queda en suspenso?",
+    "¿Me van a aplicar recargo por no pagar lo que reclamo?",
+    "Si al final tenéis razón, ¿me cobráis intereses de esos meses?",
+    "¿La parte que no discuto también se queda parada?",
+    "¿Puedo dejar de pagar el recibo mientras se resuelve?",
+    "¿Y si me dais la razón, me devolvéis el dinero con intereses?"
+   ],
+   "respuestas": [
+    "La parte del importe que se discute no se exige ni genera intereses de demora mientras la reclamación está en tramitación, y no se puede iniciar ningún procedimiento de suspensión del suministro por ese importe. La parte no discutida sí se abona en su plazo normal.",
+    "Solo queda en suspenso la parte discutida: esa no se exige, no genera intereses y no puede dar lugar a un corte. El resto de la factura se paga como siempre.",
+    "Si la reclamación termina dándole la razón, el importe se devuelve con los intereses legales desde la fecha del cargo. Si la resolución es contraria, el importe discutido se incluye en la factura siguiente sin ningún recargo."
+   ]
+  },
+  {
+   "id": "vias_si_no_satisface",
+   "preguntas": [
+    "Vuestra resolución no me parece justa, ¿adónde acudo ahora?",
+    "¿Dónde puedo acudir si la resolución no me parece justa?",
+    "¿Existe algún organismo por encima de la cooperativa?",
+    "Me habéis denegado la reclamación, ¿puedo ir a consumo?",
+    "¿Qué es la hoja de reclamaciones y para qué sirve?",
+    "¿El arbitraje de consumo me cuesta dinero?",
+    "Si acudo a la junta arbitral, ¿pierdo la vía judicial?",
+    "¿Puedo intentar varias vías a la vez?",
+    "¿La resolución del organismo de energía os obliga?",
+    "¿Tengo que ir a un abogado directamente?"
+   ],
+   "respuestas": [
+    "Quedan tres vías, y elegir una no cierra las demás mientras no haya resolución firme: la hoja de reclamaciones oficial, que la cooperativa remite al organismo competente de la comunidad autónoma en materia de energía; la junta arbitral de consumo, voluntaria para las dos partes y sin coste; y la vía judicial ordinaria.",
+    "Puede pedir la hoja de reclamaciones en la oficina, acudir a la junta arbitral de consumo, que es gratuita, o ir por la vía judicial. La resolución del organismo competente en materia de energía no es un arbitraje: es una resolución administrativa y la cooperativa está obligada a cumplirla.",
+    "Tiene tres caminos abiertos y no se excluyen entre sí: hoja de reclamaciones, junta arbitral de consumo sin coste, y vía judicial. Dígame el número de expediente y le indico cómo se pide la hoja."
+   ]
+  },
+  {
+   "id": "prueba_lectura",
+   "preguntas": [
+    "La cifra del display no cuadra con la facturada, ¿con qué lo acredito?",
+    "He apuntado el número del contador y no coincide con la factura",
+    "¿Vale una foto del contador como prueba?",
+    "¿Cómo acredito la lectura que yo veo en el display?",
+    "Quiero reclamar la lectura, ¿qué me pedís?",
+    "La cifra del equipo es menor que la facturada, ¿qué hago?",
+    "¿Tengo que apuntar la fecha cuando fotografío el contador?",
+    "¿Sirve un vídeo del display o tiene que ser foto?",
+    "¿Cómo se discute una lectura que no me cuadra?",
+    "Mi lectura no es la que enviasteis, ¿cómo lo pruebo?"
+   ],
+   "respuestas": [
+    "Si lo que se discute es una lectura, conviene aportar una fotografía del display del equipo con la fecha visible. Es la única prueba que permite fechar una lectura distinta de la que envió el equipo de telegestión.",
+    "Con una fotografía del display en la que se vea la fecha es suficiente para abrir la reclamación de lectura. Añada el número de contrato y el periodo facturado.",
+    "La fotografía del display con la fecha visible es la prueba que vale. Si además cree que el equipo mide mal, puede pedir la verificación del contador: es gratuita si el equipo resulta estar defectuoso."
+   ]
+  },
+  {
+   "id": "averia_distribuidora",
+   "preguntas": [
+    "Se me han quemado dos aparatos por una subida de tensión, ¿quién responde?",
+    "¿La cooperativa paga los daños del frigorífico tras un bajón de luz?",
+    "¿A quién reclamo un corte programado que no me avisaron?",
+    "Tuve una avería de la red y he perdido comida del congelador",
+    "¿Vosotros o la distribuidora, quién se ocupa de los daños?",
+    "He reclamado por una variación de tensión y me decís que no es vuestro",
+    "¿Qué pasa con mi reclamación si la tiene que ver la distribuidora?",
+    "¿Me dais un número de expediente aunque no sea vuestra la culpa?",
+    "La distribuidora no contesta, ¿me quedo sin solución?",
+    "¿Cuánto tardáis en trasladar mi reclamación a la distribuidora?"
+   ],
+   "respuestas": [
+    "Los daños en aparatos por una variación de tensión, los cortes programados y las averías de la red son responsabilidad de la empresa distribuidora. La cooperativa traslada la reclamación en los dos días hábiles siguientes y le comunica el número de expediente que asigna la distribuidora.",
+    "Esa reclamación la resuelve la distribuidora, no la cooperativa, pero no se queda sola: la trasladamos en dos días hábiles, mantenemos el expediente abierto hasta que contesten y volvemos a reclamar si pasan dos meses sin respuesta.",
+    "La decisión no es nuestra en ese tipo de daños, aunque sí el seguimiento. Le pasamos el número de expediente de la distribuidora en cuanto lo asignan y le avisamos de cada respuesta."
+   ]
+  },
+  {
+   "id": "estado_expediente",
+   "preguntas": [
+    "¿Dónde puedo ver cómo va mi reclamación?",
+    "¿Me avisáis cuando haya novedades del expediente?",
+    "Quiero consultar el estado de la queja que presenté",
+    "¿Puedo descargar la respuesta que me habéis dado?",
+    "¿Se guarda en algún sitio lo que me contestáis?",
+    "He perdido el correo con la resolución, ¿cómo lo recupero?",
+    "¿Cómo sé en qué punto está mi reclamación?",
+    "¿Tengo que preguntar yo o me informáis vosotros?",
+    "¿Queda registrado el número de expediente en mi cuenta?",
+    "¿Puedo ver las reclamaciones que hice el año pasado?"
+   ],
+   "respuestas": [
+    "Toda reclamación recibe un número de expediente al entrar, y su estado se consulta en la oficina virtual. Allí queda guardada también la respuesta íntegra, que puede descargar en cualquier momento.",
+    "En la oficina virtual, en el apartado de solicitudes, aparece el expediente con su estado y la resolución completa para descargar. No se borra, así que las reclamaciones anteriores siguen estando.",
+    "Puede seguirlo usted mismo desde la oficina virtual con el número de expediente. La respuesta queda archivada ahí y se puede volver a descargar siempre que la necesite."
+   ]
+  },
+  {
+   "id": "cambio_potencia_coste",
+   "preguntas": [
+    "¿Cómo cambio la potencia contratada?",
+    "Quiero bajar los kilovatios de mi contrato",
+    "Ya cambié la potencia en marzo y quiero cambiarla otra vez, ¿me cuesta algo?",
+    "¿Es gratis subir la potencia?",
+    "¿Cuánto me cobráis por un segundo cambio de potencia en el mismo año?",
+    "Me interesa ajustar la potencia porque me salta el automático",
+    "¿Puedo modificar los kilovatios dos veces seguidas?",
+    "¿Qué recargo lleva cambiar la potencia por segunda vez?",
+    "Necesito más potencia para un horno nuevo, ¿qué trámite es?",
+    "¿Cobráis por reducir la potencia contratada?"
+   ],
+   "respuestas": [
+    "La potencia contratada se puede cambiar una vez cada doce meses sin coste. Un segundo cambio dentro del mismo periodo de doce meses lleva un recargo de 10,72 € por kilovatio de diferencia, que se repercute en la primera factura posterior al cambio.",
+    "El primer cambio de cada periodo de doce meses es gratuito. Si ya hizo uno en marzo, el siguiente tendrá un coste de 10,72 € por cada kilovatio de diferencia. Bajar la potencia no requiere ningún trámite técnico.",
+    "Se solicita desde la oficina virtual. Si es el primer cambio en doce meses no cuesta nada; si es el segundo, se cobran 10,72 € por kilovatio de diferencia. Para subir por encima de lo que admite el boletín de la instalación hace falta un boletín actualizado."
+   ]
+  },
+  {
+   "id": "cambio_potencia_efecto",
+   "preguntas": [
+    "¿Cuándo empieza a aplicarse la potencia nueva?",
+    "He pedido el cambio hoy, ¿lo noto ya en este recibo?",
+    "¿Desde qué día me facturáis los kilovatios nuevos?",
+    "¿El cambio de potencia es inmediato?",
+    "Solicité bajar la potencia la semana pasada y la factura viene igual",
+    "¿Tarda mucho en hacerse efectivo el ajuste de potencia?",
+    "¿Tiene que venir alguien a casa para cambiar la potencia?",
+    "¿Puedo pedir que el cambio entre a mitad de mes?",
+    "¿La distribuidora tiene que confirmar el cambio de potencia?",
+    "¿En qué factura veré la potencia corregida?"
+   ],
+   "respuestas": [
+    "El cambio tiene efecto el primer día del periodo de facturación siguiente a la solicitud, porque la modificación la confirma antes la distribuidora. No se puede partir un periodo por la mitad.",
+    "Se aplica a partir del periodo de facturación siguiente, así que en el recibo en curso todavía verá la potencia anterior. Bajar la potencia no necesita ninguna visita a la vivienda.",
+    "La potencia nueva entra el primer día del siguiente periodo facturado. Si pasa ese periodo y la factura sigue con el valor antiguo, dígame el número de contrato y lo reviso."
+   ]
+  },
+  {
+   "id": "potencia_minima",
+   "preguntas": [
+    "¿Hasta dónde se puede reducir la potencia del contrato?",
+    "¿Hay un mínimo de potencia que obliga el equipo?",
+    "Quiero dejar la potencia en lo mínimo posible para un garaje",
+    "¿Puedo contratar menos de un kilovatio?",
+    "¿Se puede contratar la potencia en decimales?",
+    "¿La potencia va de medio en medio kilovatio?",
+    "¿Cuál es el valor mínimo admitido en el contrato?",
+    "Para una caseta que casi no gasta, ¿qué potencia puedo poner?",
+    "¿El contador admite cualquier potencia que yo pida?",
+    "¿Puedo bajar a 0,5 kW?"
+   ],
+   "respuestas": [
+    "La potencia se contrata en múltiplos de 0,1 kW, y la cooperativa no admite potencias inferiores a 1,15 kW, que es el mínimo que permite el equipo de medida.",
+    "El mínimo es 1,15 kW. Por debajo de ese valor el equipo de medida no funciona, así que no se puede contratar. Los escalones son de 0,1 kW.",
+    "No se puede bajar de 1,15 kW. Si el consumo es muy pequeño, ese mínimo con la potencia en valle ajustada suele ser la opción más barata."
+   ]
+  },
+  {
+   "id": "potencia_recomendada",
+   "preguntas": [
+    "Piso de cien metros con placa de inducción: ¿qué potencia conviene?",
+    "¿Qué kilovatios necesito para un piso pequeño sin cocina eléctrica?",
+    "Voy a poner bomba de calor, ¿me va a faltar potencia?",
+    "¿Cuánta potencia se recomienda para un local con aire acondicionado?",
+    "No sé si tengo contratado más de lo que necesito",
+    "¿Cómo calculo la potencia que me hace falta de verdad?",
+    "¿Me podéis orientar con los kilovatios para una casa de 70 metros?",
+    "¿Qué potencia es la normal en una vivienda como la mía?",
+    "Tengo 6,9 kW y nunca salta nada, ¿sobra?",
+    "¿Pago más por tener contratada más potencia de la que uso?"
+   ],
+   "respuestas": [
+    "Como orientación, una vivienda de hasta 120 m2 con cocina eléctrica suele ir con 4,60 kW. No es una obligación: la potencia que hay que contratar es la que soporta el arranque simultáneo de los aparatos que de verdad se usan a la vez.",
+    "Para una vivienda de hasta 70 m2 sin cocina eléctrica la referencia son 3,45 kW; con bomba de calor o punto de recarga, 5,75 kW; un local pequeño con aire acondicionado, 6,90 kW. Contratar de más se paga todos los días del año.",
+    "Puede pedir una visita de asesoramiento gratuita: incluye la revisión de la potencia contratada y el reparto del consumo por horas, y el informe termina con una recomendación concreta de potencia."
+   ]
+  },
+  {
+   "id": "vivienda_vacia",
+   "preguntas": [
+    "El apartamento no se usa desde mayo y aun así me llega el recibo cada mes",
+    "Si no gasto nada, ¿tengo que pagar algo?",
+    "La casa del pueblo está cerrada y aun así hay factura",
+    "¿Por qué pago con el contador a cero?",
+    "No he estado en la vivienda ni un día este mes y me cobráis",
+    "¿Qué parte del recibo se paga aunque no haya consumo?",
+    "¿Puedo evitar la factura de un piso que no uso?",
+    "¿Sale más barato dar de baja que dejarlo con el mínimo?",
+    "Un apartamento de verano, ¿cómo lo dejo lo más barato posible?",
+    "¿Merece la pena mantener el contrato si solo voy dos semanas al año?"
+   ],
+   "respuestas": [
+    "El término de potencia se paga aunque no se encienda nada: depende de los kilovatios contratados y de los días del periodo, no del consumo. Por eso una vivienda vacía recibe factura.",
+    "Lo que se cobra en ese caso es el término de potencia, más el alquiler del equipo y los impuestos. Para una vivienda de uso ocasional suele salir más barato bajar la potencia al mínimo que dar de baja y volver a dar de alta, porque el alta exige el trámite completo.",
+    "No existe la baja temporal: o se mantiene el contrato, o se da de baja y después se tramita un alta nueva. Con dos semanas de uso al año, la opción habitual es dejar la potencia en el mínimo de 1,15 kW."
+   ]
+  },
+  {
+   "id": "alta_documentacion",
+   "preguntas": [
+    "¿Qué papeles necesito para dar de alta la luz en un piso nuevo?",
+    "Me acabo de mudar, ¿qué tengo que presentar?",
+    "¿Hace falta el boletín del electricista para el alta?",
+    "¿Qué es el código universal del punto de suministro y dónde lo busco?",
+    "¿Pedís la referencia catastral para contratar?",
+    "¿Puedo dar de alta sin tener el certificado de la instalación?",
+    "Voy a contratar la luz por primera vez, ¿qué me vais a pedir?",
+    "¿Necesito algo del promotor de la vivienda para el alta?",
+    "¿Qué documentación es imprescindible para un punto nuevo?",
+    "¿Vale el boletín que firmó el instalador hace un mes?"
+   ],
+   "respuestas": [
+    "Para dar de alta un punto nuevo hacen falta el código universal del punto de suministro, el boletín de la instalación eléctrica firmado por una empresa instaladora autorizada y la referencia catastral de la vivienda.",
+    "Los tres documentos son el código universal del punto de suministro, el boletín de la instalación y la referencia catastral. El código aparece siempre en la primera página de cualquier factura anterior, arriba a la derecha.",
+    "Sí, el boletín es imprescindible y lo tiene que firmar una empresa instaladora autorizada. Con eso, el código del punto de suministro y la referencia catastral, el alta se puede tramitar entera por la oficina virtual."
+   ]
+  },
+  {
+   "id": "alta_plazo",
+   "preguntas": [
+    "¿Qué demora hay para tener suministro en una vivienda recién comprada?",
+    "¿Cuándo tendré suministro si entrego hoy los papeles?",
+    "Me mudo el día 1, ¿llego a tiempo si lo pido ahora?",
+    "¿El alta es cuestión de días o de semanas?",
+    "¿Desde cuándo cuenta el plazo del alta?",
+    "Entregué la documentación el martes, ¿para cuándo la luz?",
+    "¿Cuántos días hábiles tarda la distribuidora en dar el alta?",
+    "¿Hay forma de saber en qué punto va mi alta?",
+    "¿Se puede adelantar el alta de alguna manera?",
+    "¿El plazo empieza cuando falta algún documento?"
+   ],
+   "respuestas": [
+    "El alta tarda entre cinco y siete días hábiles desde que la documentación está completa. Si falta algún documento, el plazo no empieza a contar hasta que se aporta.",
+    "Entre cinco y siete días hábiles con la documentación completa. El estado del trámite se puede seguir en la oficina virtual, en el apartado de solicitudes.",
+    "Con los papeles entregados el martes, lo normal es tener suministro la semana siguiente. Si necesita la luz antes, existe el alta urgente para el día siguiente cuando el boletín está en vigor y el equipo operativo."
+   ]
+  },
+  {
+   "id": "alta_urgente",
+   "preguntas": [
+    "¿Se puede dar el suministro mañana por la mañana?",
+    "¿Hay alguna forma de acelerar el alta?",
+    "¿Cuánto cuesta el alta urgente?",
+    "Me han adelantado la mudanza, ¿podéis dar el alta en 24 horas?",
+    "¿El alta urgente sirve para una vivienda que nunca tuvo luz?",
+    "¿Qué condiciones tiene el alta para el día siguiente?",
+    "¿Puedo pagar por tener el suministro antes?",
+    "¿El alta exprés necesita boletín en vigor?",
+    "¿Hay recargo por tramitar el alta con prisa?",
+    "¿La distribuidora acepta las altas urgentes siempre?"
+   ],
+   "respuestas": [
+    "Un alta urgente, solicitada para el día siguiente, es posible si la instalación ya tiene boletín en vigor y la distribuidora confirma que el equipo de medida está operativo. Tiene un coste de 32,10 € y no se aplica a los puntos que nunca han tenido suministro.",
+    "Sí, con dos condiciones: boletín en vigor y equipo de medida operativo. Cuesta 32,10 €. Para un punto que nunca ha tenido suministro no existe esa vía y hay que seguir el plazo normal de cinco a siete días hábiles.",
+    "El alta para el día siguiente cuesta 32,10 € y depende de que la distribuidora confirme el equipo. Si el punto es nuevo del todo, no se puede acoger a esa modalidad."
+   ]
+  },
+  {
+   "id": "boletin_antiguo",
+   "preguntas": [
+    "La vivienda del pueblo estuvo años sin luz: ¿sirve el certificado antiguo?",
+    "¿Hay que renovar el boletín si el punto ha estado mucho tiempo de baja?",
+    "¿Cuántos años de inactividad obligan a un boletín nuevo?",
+    "Tengo el certificado de la instalación de 2019, ¿vale?",
+    "El piso estuvo cuatro años sin inquilinos, ¿qué me pedís?",
+    "¿Por qué me exigís un boletín nuevo si ya tenía uno?",
+    "¿Es la distribuidora la que obliga al boletín nuevo?",
+    "¿Puedo reactivar el suministro sin pasar por el electricista?",
+    "Después de una reforma, ¿tengo que presentar boletín otra vez?",
+    "¿Qué pasa si el punto llevaba cinco años sin luz?"
+   ],
+   "respuestas": [
+    "Si el punto llevaba más de tres años sin suministro, la distribuidora exige un boletín nuevo aunque exista uno anterior. No es una decisión de la cooperativa.",
+    "El límite son tres años sin suministro. Por encima de ese tiempo hay que presentar un boletín actualizado firmado por una empresa instaladora autorizada.",
+    "Con cinco años de inactividad, sí: hace falta boletín nuevo. Conviene pedirlo antes de solicitar el alta, porque el plazo de cinco a siete días hábiles no empieza hasta que la documentación está completa."
+   ]
+  },
+  {
+   "id": "fianza",
+   "preguntas": [
+    "¿Cómo se calcula el depósito que me pedís al principio?",
+    "¿Qué es la fianza del alta y cuánto es?",
+    "¿Me devolvéis la fianza cuando me vaya?",
+    "¿Hay que pagar fianza si vuelvo a contratar en el mismo piso?",
+    "¿La fianza viene en la primera factura?",
+    "Tuve contrato aquí el año pasado, ¿me volvéis a cobrar fianza?",
+    "¿Cuándo recupero el depósito tras la baja?",
+    "¿La fianza genera intereses?",
+    "¿De qué depende el importe de la fianza?",
+    "¿Puedo pagar la fianza aparte en lugar de en la factura?"
+   ],
+   "respuestas": [
+    "La fianza equivale a cincuenta veces el término de potencia diario de la potencia solicitada y se abona en la primera factura. No se exige cuando el punto ya estuvo dado de alta a nombre de la misma persona en los doce meses anteriores.",
+    "Se calcula sobre la potencia que se contrata, y se devuelve en la factura final o, si no hay importe pendiente, por transferencia en los treinta días siguientes a la baja.",
+    "Si usted tuvo el contrato en ese mismo punto dentro de los últimos doce meses, no hay fianza. En los demás casos se carga en la primera factura y se devuelve íntegra al causar baja."
+   ]
+  },
+  {
+   "id": "baja_contrato",
+   "preguntas": [
+    "Dejo la vivienda a final de mes, ¿cuándo debo avisar?",
+    "¿Me cobráis penalización por darme de baja?",
+    "Quiero cancelar el contrato a final de mes",
+    "¿Cómo se tramita la baja del suministro?",
+    "Llevo cuatro meses con vosotros, ¿puedo irme sin coste?",
+    "¿Hay compromiso de permanencia?",
+    "¿Qué pasa con el recibo del mes en el que me doy de baja?",
+    "¿Puedo pedir la baja por la oficina virtual o tengo que ir?",
+    "¿Cuántos días antes tengo que avisar de la baja?",
+    "¿Me hacéis una última factura con la lectura del día que me voy?"
+   ],
+   "respuestas": [
+    "La baja se solicita por la oficina virtual con una antelación mínima de siete días naturales y no tiene ninguna penalización, sea cual sea el tiempo que lleve activo el contrato. Se emite una factura final con la lectura del día de la baja.",
+    "No hay permanencia ni penalización. Avise con siete días naturales de antelación desde la oficina virtual y recibirá una última factura con la lectura de ese día.",
+    "Puede tramitarla entera por la oficina virtual. Con siete días de aviso es suficiente; la fianza se devuelve en la factura final o por transferencia en treinta días si no queda nada pendiente."
+   ]
+  },
+  {
+   "id": "cambio_titular",
+   "preguntas": [
+    "Quiero poner el contrato a mi nombre, ¿cómo se hace?",
+    "¿El cambio de titular corta la luz?",
+    "¿Cuánto cuesta cambiar el titular del contrato?",
+    "He comprado la casa, ¿tengo que dar de alta de nuevo?",
+    "¿Pierdo la antigüedad si cambio el titular?",
+    "¿Quién tiene que pedir el cambio de nombre, el que entra o el que sale?",
+    "Mi madre ha fallecido y el contrato está a su nombre",
+    "¿Qué documentos hacen falta para subrogar el contrato?",
+    "¿Puedo cambiar el titular sin que el anterior firme nada?",
+    "¿Cuánto tiempo tengo para cambiar el titular tras un fallecimiento?"
+   ],
+   "respuestas": [
+    "El cambio de titular no interrumpe el suministro y conserva la antigüedad del punto en la cooperativa. Lo solicita la persona que entra como titular, con el consentimiento expreso de la que sale, y es gratuito.",
+    "Es gratuito y no hace falta dar de alta otra vez: el suministro sigue sin cortarse. Lo pide quien va a ser el nuevo titular, con el consentimiento de quien lo deja.",
+    "Si la persona titular ha fallecido, cualquier persona que conviviera en la vivienda puede solicitar el cambio en los tres meses siguientes aportando el libro de familia o el certificado de convivencia. También es gratuito y conserva la antigüedad."
+   ]
+  },
+  {
+   "id": "impago_suspension",
+   "preguntas": [
+    "Se me ha quedado un recibo sin pagar, ¿me vais a cortar la luz?",
+    "¿Cuánto tiempo tengo antes de que cortéis el suministro por impago?",
+    "He recibido un requerimiento por escrito, ¿qué significa?",
+    "Me he retrasado dos meses con una factura, ¿qué va a pasar?",
+    "¿Avisáis antes de suspender el suministro?",
+    "¿Cuántos meses tienen que pasar para que llegue el corte?",
+    "Tengo el bono social, ¿me podéis cortar igualmente?",
+    "¿Qué plazos hay entre el requerimiento y el corte?",
+    "Si pago el mismo día, ¿se para el procedimiento?",
+    "¿Me podéis cortar sin mandarme nada por escrito?"
+   ],
+   "respuestas": [
+    "Si una factura sigue impagada dos meses después de su vencimiento, la cooperativa envía un requerimiento por escrito. La suspensión no puede producirse antes de que pasen dos meses desde ese requerimiento, así que hay un margen amplio y siempre con aviso previo.",
+    "En los hogares acogidos al bono social estatal la suspensión queda prohibida mientras el reconocimiento esté vigente. En los demás casos hacen falta dos meses de impago, un requerimiento por escrito y otros dos meses desde él.",
+    "El procedimiento se detiene en cuanto se paga. Si tiene dificultades para hacerlo, puede pedir el fondo de emergencia: mientras la solicitud está en estudio no se inicia ningún procedimiento de suspensión por esa factura."
+   ]
+  },
+  {
+   "id": "suspension_dias",
+   "preguntas": [
+    "¿Es legal suspender el suministro justo antes del fin de semana?",
+    "¿Cortáis el suministro en festivos?",
+    "¿Qué días no se puede suspender el suministro?",
+    "¿Me van a cortar la luz en vísperas de un festivo?",
+    "¿Hay días protegidos en los que no cortáis?",
+    "¿Es verdad que no se corta antes de un puente?",
+    "¿Un jueves anterior a festivo puede haber corte?",
+    "¿Cuándo se puede suspender y cuándo no?",
+    "¿Cortan el lunes o esperan a media semana?",
+    "¿Existe alguna limitación de calendario para la suspensión?"
+   ],
+   "respuestas": [
+    "La suspensión nunca se produce un viernes, un día festivo ni el día anterior a un festivo, para que nadie se quede sin suministro cuando las oficinas están cerradas y no se puede resolver el pago.",
+    "No: los viernes, los festivos y las vísperas de festivo están excluidos. Y en los hogares con bono social estatal vigente la suspensión está prohibida en cualquier día.",
+    "Esos días están fuera por norma. Si le han anunciado un corte en uno de ellos, dígame el número de contrato y lo reviso, porque sería un error."
+   ]
+  },
+  {
+   "id": "reconexion",
+   "preguntas": [
+    "Ya he pagado, ¿cuándo me vuelven a dar la luz?",
+    "¿Cuánto cuesta reconectar el suministro?",
+    "¿Tengo que pagar algo aparte para que me restablezcan el servicio?",
+    "He hecho la transferencia esta mañana, ¿cuándo tendré luz?",
+    "¿Cuántas horas tardáis en reponer el suministro tras el pago?",
+    "¿La reconexión la hacéis el mismo día?",
+    "¿El coste de reconexión va en la siguiente factura?",
+    "¿Hay que llamar para pedir la reconexión o es automática?",
+    "¿Qué importe se cobra por volver a conectar?",
+    "¿Me podéis reconectar antes si acredito el pago?"
+   ],
+   "respuestas": [
+    "En caso de suspensión, la reconexión se realiza en las veinticuatro horas siguientes al pago y el coste de reconexión es de 18,50 €, que se incluye en la factura siguiente.",
+    "El plazo es de veinticuatro horas desde el pago. El importe de la reconexión son 18,50 €. No hace falta pedirlo: se tramita al registrarse el cobro.",
+    "Con el justificante de la transferencia se puede adelantar el registro del pago. A partir de ahí, veinticuatro horas para la reconexión y 18,50 € de coste."
+   ]
+  },
+  {
+   "id": "factura_estructura",
+   "preguntas": [
+    "¿Qué partes tiene la factura de la luz?",
+    "No entiendo el desglose del recibo",
+    "¿Qué diferencia hay entre el término de potencia y el de energía?",
+    "¿Por qué hay dos conceptos distintos en la factura?",
+    "¿Qué significa cada línea de la factura?",
+    "¿Me explicáis el recibo concepto a concepto?",
+    "¿Qué es eso del término fijo?",
+    "¿Cuál de los dos conceptos depende de lo que gasto?",
+    "¿Por qué sube la factura si he gastado lo mismo?",
+    "¿Dónde veo cuántos kilovatios hora he consumido?"
+   ],
+   "respuestas": [
+    "La factura tiene dos grandes bloques. El término de potencia se paga aunque no se encienda nada: depende de los kilovatios contratados y de los días del periodo. El término de energía depende de los kilovatios hora que de verdad se han consumido, y se desglosa en punta, llano y valle con su lectura inicial y final.",
+    "El término de potencia es la parte que no depende del consumo; el de energía, la que sí. Sobre la suma de los dos se aplica el impuesto especial, después el alquiler del equipo de medida, y al final el IVA.",
+    "En el bloque central de la factura está el desglose por conceptos, y al pie figuran la potencia contratada en cada franja, el consumo del mismo periodo del año anterior y el consumo medio diario."
+   ]
+  },
+  {
+   "id": "factura_impuestos",
+   "preguntas": [
+    "¿Cuál es el tipo del impuesto que grava la electricidad?",
+    "¿El IVA se calcula antes o después del impuesto eléctrico?",
+    "¿Sobre qué base se aplica el 21 %?",
+    "¿Qué es el impuesto especial sobre la electricidad?",
+    "¿El alquiler del contador lleva IVA?",
+    "¿Por qué pago impuesto sobre impuesto?",
+    "¿Cuánto es el tipo del impuesto eléctrico?",
+    "¿Los impuestos se aplican también al término de potencia?",
+    "¿En qué orden se suman los impuestos del recibo?",
+    "¿El IVA de la luz es el general?"
+   ],
+   "respuestas": [
+    "Sobre la suma del término de potencia y el término de energía se aplica el impuesto especial sobre la electricidad, con un tipo del 5,11 %. Después se suma el alquiler del equipo de medida y, sobre el total resultante, el IVA del 21 %.",
+    "El orden importa: el IVA se calcula al final, sobre una base que ya incluye el impuesto especial y el alquiler del contador. El tipo del impuesto especial es del 5,11 % y el del IVA, del 21 %.",
+    "Sí, el impuesto especial se aplica también a la parte de potencia, porque la base es la suma de los dos términos. El alquiler del equipo entra en la base del IVA, pero no en la del impuesto especial."
+   ]
+  },
+  {
+   "id": "factura_estimada",
+   "preguntas": [
+    "¿En qué se nota que la factura lleva una estimación y no una lectura?",
+    "Mi factura dice estimada, ¿qué quiere decir?",
+    "¿Por qué me habéis facturado una estimación?",
+    "¿Qué pasa si la estimación es más alta que mi consumo real?",
+    "¿Se regulariza después una factura estimada?",
+    "¿Con qué dato calculáis la estimación?",
+    "¿Es normal recibir una factura sin lectura real?",
+    "¿Puedo pedir que no me estiméis el consumo?",
+    "¿Cuándo se corrige la diferencia de una estimada?",
+    "¿Por qué ha fallado la lectura del contador este mes?"
+   ],
+   "respuestas": [
+    "Cuando la comunicación con el contador falla, la cooperativa factura con una estimación basada en el consumo del mismo mes del año anterior y lo indica con la palabra «estimada» junto al periodo. En la factura siguiente se regulariza la diferencia.",
+    "La palabra «estimada» junto al periodo es la señal. Lo normal es que todas las facturas sean de lectura real, porque los equipos de telegestión envían la lectura sin que nadie tenga que ir a la vivienda.",
+    "La diferencia no se pierde: se ajusta en la factura siguiente, cuando vuelve a haber lectura real. Si la estimación le ha salido muy alta, puede aportar una fotografía del display con la fecha visible y se corrige antes."
+   ]
+  },
+  {
+   "id": "verificacion_contador",
+   "preguntas": [
+    "Sospecho que el equipo de medida no cuenta bien, ¿la revisión es de pago?",
+    "¿Cómo pido la verificación del contador?",
+    "¿Cuánto vale comprobar si el contador está bien?",
+    "Sospecho que el equipo cuenta de más",
+    "¿Y si la verificación dice que el contador funciona bien?",
+    "¿Es gratis la revisión si el contador está averiado?",
+    "¿Quién paga la comprobación del equipo de medida?",
+    "Mi consumo se ha doblado sin motivo, ¿puede ser el contador?",
+    "¿Qué pasa si el contador resulta estar defectuoso?",
+    "¿Puedo pedir que cambien el contador?"
+   ],
+   "respuestas": [
+    "La verificación es gratuita si el equipo resulta estar mal, y cuesta 23,40 € si funciona correctamente. Se solicita por la oficina virtual indicando el número de contrato.",
+    "Si el equipo está defectuoso, la verificación no cuesta nada y se corrige lo facturado. Si funciona bien, el coste es de 23,40 €, que se incluye en la factura siguiente.",
+    "Antes de pedirla conviene comprobar tres cosas: que el periodo facturado no sea más largo de lo habitual, que la factura no sea estimada y que la potencia contratada que figura al pie sea la que se solicitó. La mayoría de las dudas se resuelven con esos tres datos."
+   ]
+  },
+  {
+   "id": "curva_horaria",
+   "preguntas": [
+    "¿Hay manera de descargar mi consumo desglosado por horas?",
+    "¿Dónde veo mi consumo por horas?",
+    "¿Tenéis los datos de consumo en Excel?",
+    "Quiero analizar cuándo gasto más, ¿me dais los datos?",
+    "¿Cuántos meses de histórico puedo descargar?",
+    "¿Cómo obtengo la curva de carga de mi suministro?",
+    "¿Se puede ver el consumo de un día concreto?",
+    "¿Los datos horarios están disponibles para todos los socios?",
+    "¿Me podéis enviar el consumo horario del año pasado?",
+    "¿En qué formato se descarga el consumo detallado?"
+   ],
+   "respuestas": [
+    "La curva horaria de los últimos doce meses se puede descargar en la oficina virtual en formato de hoja de cálculo. Con ella se ve el reparto entre punta, llano y valle día a día.",
+    "Está en la oficina virtual, en el apartado de consumos: doce meses de histórico y descarga en hoja de cálculo. Es el dato con el que se decide si conviene cambiar de franja los usos que se pueden mover.",
+    "Sí, cualquier persona socia puede descargarla. Si quiere, con esa curva podemos revisar en una visita de asesoramiento gratuita si la potencia y la tarifa contratadas son las que le convienen."
+   ]
+  },
+  {
+   "id": "cups",
+   "preguntas": [
+    "¿En qué sitio aparece el identificador largo del suministro?",
+    "Me piden el CUPS y no sé qué es",
+    "¿En qué parte de la factura está el código del suministro?",
+    "Necesito el identificador del punto de suministro para un trámite",
+    "¿Me podéis decir el código universal de mi contrato?",
+    "¿El código del punto de suministro cambia si cambio de titular?",
+    "¿Dónde mira uno ese código tan largo que empieza por ES?",
+    "¿El CUPS aparece en todas las facturas?",
+    "Para el boletín me piden el código del punto, ¿cuál es?",
+    "¿Es lo mismo el número de contrato que el código del punto?"
+   ],
+   "respuestas": [
+    "El código universal del punto de suministro aparece siempre en la primera página de la factura, arriba a la derecha, y es el dato que hay que indicar en cualquier gestión.",
+    "No es lo mismo que el número de contrato: el código del punto identifica la instalación y no cambia aunque cambie el titular. Lo tiene en la primera página de cualquier factura, en la esquina superior derecha.",
+    "Lo encontrará en la cabecera de la factura, arriba a la derecha de la primera página. Si no tiene ninguna factura a mano, también aparece en la oficina virtual junto a los datos del contrato."
+   ]
+  },
+  {
+   "id": "franjas_horarias",
+   "preguntas": [
+    "¿En qué horario de los días laborables se paga más?",
+    "¿Cuándo empieza el tramo barato?",
+    "El fin de semana, ¿importa a qué hora use los electrodomésticos?",
+    "¿Los festivos cuentan como valle?",
+    "¿A qué hora puedo poner el lavavajillas para pagar menos?",
+    "¿Cuáles son los tramos horarios de la tarifa de casa?",
+    "¿El cambio de hora de octubre mueve los tramos?",
+    "¿El domingo entero es barato?",
+    "¿Qué horas son las de precio medio?",
+    "¿Desde las diez de la noche ya es valle?"
+   ],
+   "respuestas": [
+    "El tramo de punta va de 10:00 a 14:00 y de 18:00 a 22:00 de lunes a viernes. El tramo llano ocupa el resto de las horas de los días laborables. El tramo de valle va de 00:00 a 08:00 de lunes a viernes y, además, todas las horas de los sábados, los domingos y los festivos de ámbito nacional.",
+    "El sábado entero es valle, igual que el domingo y los festivos nacionales, así que la hora da igual esos días. Entre semana, el valle es de medianoche a las ocho de la mañana.",
+    "A las 22:00 termina la punta y empieza el tramo llano, que llega hasta medianoche; el valle no empieza hasta las 00:00. El cambio de hora de marzo y de octubre no modifica los tramos: lo que cambia es la hora del reloj."
+   ]
+  },
+  {
+   "id": "precios_energia",
+   "preguntas": [
+    "¿Cuál es el precio del kilovatio hora en el tramo de punta?",
+    "¿Cuánto cuesta el kilovatio hora en valle?",
+    "¿Qué precio tiene la energía en el tramo llano?",
+    "¿Cuánto me cobráis por kWh de madrugada?",
+    "¿Qué diferencia de precio hay entre punta y valle?",
+    "¿Me podéis dar los tres precios de energía de la 2.0TD?",
+    "¿Y lo que se paga por kilovatio contratado en punta?",
+    "¿Cuánto vale el kW de potencia en el periodo valle?",
+    "¿Los precios de la tarifa cambian cada mes?",
+    "¿Dónde consulto los precios vigentes de mi tarifa?"
+   ],
+   "respuestas": [
+    "En la tarifa 2.0TD la energía está a 0,189 € por kWh en punta, 0,142 € en llano y 0,098 € en valle. La potencia está a 0,0812 € por kW y día en punta y a 0,0105 € en valle.",
+    "La potencia en valle sale a 0,0105 € por kW y día, y en punta a 0,0812 €. Son precios aprobados por la asamblea para todo el ejercicio: no se revisan a mitad de año salvo que un cambio normativo obligue a ello.",
+    "El kilovatio hora en valle está a 0,098 € y en punta a 0,189 €, casi el doble. Los precios vigentes están siempre publicados en la oficina virtual."
+   ]
+  },
+  {
+   "id": "alquiler_contador",
+   "preguntas": [
+    "¿Por qué aparece un importe mensual por el equipo de medida?",
+    "¿Por qué pago un alquiler de contador?",
+    "¿Cuánto es el alquiler del equipo de medida al mes?",
+    "¿El equipo trifásico tiene otro precio de alquiler?",
+    "¿Puedo comprar el contador en lugar de alquilarlo?",
+    "¿El precio del alquiler lo fijáis vosotros?",
+    "¿El alquiler del contador aparece como concepto aparte?",
+    "¿Es obligatorio pagar el alquiler del equipo?",
+    "¿Cuánto cuesta al año el alquiler del contador monofásico?",
+    "¿El contador trifásico cuesta más de alquiler?"
+   ],
+   "respuestas": [
+    "El alquiler del contador de telegestión monofásico es de 0,81 € al mes y el trifásico, de 1,36 € al mes. Es un precio regulado: no lo fija la cooperativa y aparece en la factura como un concepto aparte.",
+    "Son 0,81 € al mes en monofásico. El importe está regulado, así que es el mismo con cualquier comercializadora, y entra en la base del IVA de la factura.",
+    "El trifásico es más caro: 1,36 € al mes frente a 0,81 € del monofásico. Al ser un precio regulado, la cooperativa no puede modificarlo."
+   ]
+  },
+  {
+   "id": "bono_social_complemento",
+   "preguntas": [
+    "Tengo concedido el descuento estatal por vulnerabilidad, ¿añadís algo?",
+    "¿Qué es el complemento cooperativo del bono social?",
+    "¿Cuánto me rebajáis por encima del descuento del Gobierno?",
+    "Tengo reconocido el bono social, ¿hay ayuda añadida de la cooperativa?",
+    "¿Tengo que pedir cada año el complemento de la cooperativa?",
+    "¿Sobre qué importe se aplica ese 15 % vuestro?",
+    "Si me caduca el bono social, ¿pierdo el complemento?",
+    "¿El complemento es compatible con la ayuda a las obras de mejora?",
+    "¿Comprobáis vosotros si sigo teniendo derecho al bono social?",
+    "¿Cada cuánto revisáis el reconocimiento del bono social?"
+   ],
+   "respuestas": [
+    "El complemento cooperativo es una rebaja adicional del 15 % sobre el importe que queda por pagar después de aplicar el descuento estatal, y se mantiene mientras siga vigente el reconocimiento oficial.",
+    "No hace falta pedirlo cada año: la cooperativa comprueba de oficio cada trimestre que el reconocimiento sigue en vigor y renueva el complemento sin que usted haga nada. Si el reconocimiento estatal caduca, el complemento se retira en la factura siguiente.",
+    "El complemento no es compatible con el programa de eficiencia en el mismo ejercicio, pero sí con el fondo de emergencia y con el autoconsumo compartido."
+   ]
+  },
+  {
+   "id": "fondo_emergencia",
+   "preguntas": [
+    "Estoy en el paro y este recibo no lo puedo afrontar",
+    "¿Existe alguna ayuda para una factura que no puedo afrontar?",
+    "¿Cuánto cubre el fondo de emergencia?",
+    "¿Me dais el dinero en mano o lo descontáis de la factura?",
+    "¿Tengo que presentar nóminas para pedir la ayuda de urgencia?",
+    "Estoy de baja por enfermedad y se me ha juntado todo",
+    "¿Puedo pedir el fondo de emergencia dos veces en el mismo año?",
+    "¿Qué pasa si ya he agotado el tope de la ayuda?",
+    "¿Me podéis cortar la luz mientras estudiáis mi solicitud?",
+    "¿Cómo se solicita la ayuda de emergencia?"
+   ],
+   "respuestas": [
+    "El fondo de emergencia cubre hasta 300 € por hogar y año para una factura puntual que no se puede pagar por una situación sobrevenida. La ayuda no se entrega en efectivo: se descuenta directamente de la factura pendiente.",
+    "Se solicita con un escrito breve que explique la situación, sin aportar documentación económica en el momento de la solicitud. Mientras la solicitud está en estudio, la cooperativa no inicia ningún procedimiento de suspensión por la factura afectada.",
+    "Se puede pedir dos veces como máximo en un mismo año natural, sin pasar de los 300 € en total. A quien ya agotó el tope se le ofrece un pago fraccionado sin intereses en hasta seis mensualidades."
+   ]
+  },
+  {
+   "id": "fondo_emergencia_plazo",
+   "preguntas": [
+    "¿Cuánto tardáis en decirme algo si pido la ayuda urgente?",
+    "¿Qué plazo tiene la resolución del fondo de emergencia?",
+    "Pedí la ayuda el lunes, ¿cuándo me contestáis?",
+    "¿Es rápido el trámite de la ayuda de emergencia?",
+    "¿Hay un plazo máximo para resolver la solicitud?",
+    "¿Me avisáis por correo cuando esté resuelta la ayuda?",
+    "¿Puedo saber en qué punto va mi solicitud de ayuda?",
+    "¿Diez días es desde que escribo o desde que lo registráis?",
+    "¿La resolución de la ayuda llega antes del vencimiento del recibo?",
+    "¿Y si la ayuda se resuelve después de que me pasen el recibo?"
+   ],
+   "respuestas": [
+    "El plazo de resolución del fondo de emergencia es de diez días hábiles desde la entrada de la solicitud. Durante ese tiempo no se inicia ningún procedimiento de suspensión por la factura afectada.",
+    "Diez días hábiles contados desde la entrada en el registro. La resolución se comunica por la oficina virtual y queda guardada para poder descargarla después.",
+    "Si la resolución llega después del cargo, la ayuda se aplica como descuento en la factura siguiente. El expediente, con su número, se consulta en la oficina virtual."
+   ]
+  },
+  {
+   "id": "ayuda_eficiencia",
+   "preguntas": [
+    "Voy a sustituir las ventanas, ¿hay subvención de la cooperativa?",
+    "¿Financiáis la instalación de una bomba de calor?",
+    "¿Cuánto cubre la ayuda a las obras de mejora?",
+    "¿Entra el aislamiento de la fachada en el programa?",
+    "¿Con qué frecuencia puede una vivienda volver a recibir esta subvención?",
+    "La obra está acabada y la factura del instalador ya os la envié",
+    "¿Vale la ayuda para comprar electrodomésticos nuevos?",
+    "¿Puedo pedirla si la obra ya está empezada?",
+    "En mi casa vivimos dos socios con contratos distintos, ¿podemos pedirla los dos?",
+    "¿Cubre la ayuda los termostatos programables?"
+   ],
+   "respuestas": [
+    "El programa de eficiencia financia la mitad del coste de la actuación, con un tope de 600 € por vivienda. Entran el cambio de ventanas, el aislamiento de cubiertas y fachadas, la sustitución de una caldera por una bomba de calor y la instalación de termostatos programables.",
+    "Quedan fuera los electrodomésticos, el pequeño material eléctrico y cualquier obra iniciada antes de la fecha de concesión. La ayuda se abona una vez presentada la factura de la empresa instaladora, en los sesenta días siguientes.",
+    "Cada vivienda puede recibir esta ayuda una sola vez cada cinco años. Si en la misma vivienda conviven dos personas socias con contratos distintos, se concede a una sola de ellas."
+   ]
+  },
+  {
+   "id": "autoconsumo",
+   "preguntas": [
+    "¿Cómo me apunto a las placas compartidas?",
+    "¿Qué es el autoconsumo compartido de la cooperativa?",
+    "¿Qué separación máxima admite la adhesión a una instalación compartida?",
+    "¿Cuántas instalaciones solares tenéis en marcha?",
+    "¿Cómo se ve en la factura lo que generan las placas?",
+    "¿Se puede modificar mi coeficiente de reparto en la instalación solar?",
+    "¿Qué pasa si un mes genero más de lo que consumo?",
+    "¿Me pagáis en dinero el excedente que no se compensa?",
+    "¿El excedente se guarda para el mes siguiente?",
+    "¿La compensación puede dejar la factura a cero?"
+   ],
+   "respuestas": [
+    "Quien se adhiere a una de las tres instalaciones solares compartidas recibe en su factura una compensación por los kilovatios hora que la instalación vierte a la red, en proporción al coeficiente de reparto que figura en su contrato de adhesión.",
+    "La adhesión exige que el punto de suministro esté a menos de 2.000 metros de la instalación. El coeficiente de reparto se puede modificar una vez al año, con efecto el primer día del mes siguiente a la solicitud.",
+    "La compensación nunca puede superar el importe del término de energía de la factura del mes, así que no deja la factura a cero. El excedente que no se compensa no se acumula para meses posteriores ni se abona en dinero."
+   ]
+  },
+  {
+   "id": "asesoramiento",
+   "preguntas": [
+    "¿Podéis venir a casa a mirar si tengo la potencia bien?",
+    "¿Ofrecéis asesoramiento energético?",
+    "¿Cuánto cuesta la visita de asesoramiento?",
+    "¿Me obliga a algo pedir el asesoramiento?",
+    "¿Qué incluye la visita del técnico de asesoramiento?",
+    "¿Me dais un informe después de la visita?",
+    "Quiero que alguien me diga cómo ahorrar en la factura",
+    "¿El asesoramiento sirve para cambiar de tarifa?",
+    "¿La visita la puede pedir cualquier socio?",
+    "¿Me recomendáis una potencia concreta tras la visita?"
+   ],
+   "respuestas": [
+    "Cualquier persona socia puede pedir una visita de asesoramiento en su vivienda. Incluye la revisión de la potencia contratada, el reparto del consumo por horas y una estimación del ahorro que supondría mover a otra franja los usos que se pueden desplazar.",
+    "Es gratuito y no obliga a contratar nada. El informe que se entrega al terminar la visita incluye una recomendación de potencia y, si procede, la propuesta de cambio de tarifa.",
+    "Se pide por la oficina virtual. Si quiere, antes de la visita puede descargar la curva horaria de los últimos doce meses: con ese dato la recomendación es mucho más precisa."
+   ]
+  },
+  {
+   "id": "horario_atencion",
+   "preguntas": [
+    "¿En qué franja se puede acudir presencialmente?",
+    "¿Abrís por las tardes?",
+    "¿Qué días atendéis al público?",
+    "¿Estáis abiertos los sábados?",
+    "¿Hasta qué hora se puede ir el martes?",
+    "¿Puedo hacer gestiones fuera del horario de oficina?",
+    "¿Hay que pedir cita para ir a la oficina?",
+    "¿Cuál es el horario de atención presencial?",
+    "¿Los viernes por la tarde hay alguien?",
+    "¿La oficina virtual tiene horario?"
+   ],
+   "respuestas": [
+    "La oficina atiende de lunes a viernes de 9:00 a 14:00 y los martes también de 16:00 a 19:00. La oficina virtual está disponible todos los días a cualquier hora.",
+    "Por la tarde solo los martes, de 16:00 a 19:00. Para cualquier solicitud con registro de entrada, el único canal es la oficina virtual, que no tiene horario.",
+    "De lunes a viernes por la mañana, y el martes también por la tarde. Las averías y las faltas de suministro se atienden todos los días del año, a cualquier hora, por el canal de incidencias."
+   ]
+  },
+  {
+   "id": "falta_suministro",
+   "preguntas": [
+    "Un domingo a las tres de la mañana sin suministro: ¿quién me atiende?",
+    "Se ha ido la luz en todo el barrio, ¿qué hago?",
+    "No tengo suministro y los vecinos sí",
+    "¿Cómo aviso de una avería fuera de horario?",
+    "¿Cuánto suele tardar en arreglarse una avería de la red?",
+    "¿Qué compruebo antes de dar el aviso de avería?",
+    "Me ha saltado el interruptor de control de potencia, ¿es avería?",
+    "¿El aviso de incidencia llega a alguien de guardia?",
+    "¿Tengo que esperar al lunes para que me atiendan un corte?",
+    "¿Qué hago si solo falla la luz en mi vivienda?"
+   ],
+   "respuestas": [
+    "Las averías y las faltas de suministro se atienden todos los días del año, a cualquier hora, por el canal de incidencias de la oficina virtual, que genera un aviso inmediato al equipo de guardia.",
+    "Lo primero es mirar si los vecinos tienen luz y si el interruptor de control de potencia ha saltado. Si solo afecta a su vivienda y el cuadro está correctamente conectado, se abre una incidencia.",
+    "Una avería que afecta a la red se resuelve de media en menos de tres horas. No hace falta esperar a ningún horario: el aviso se registra y llega al equipo de guardia en el momento."
+   ]
+  },
+  {
+   "id": "compensacion_corte",
+   "preguntas": [
+    "Si el apagón se alarga, ¿desde qué momento hay derecho a compensación?",
+    "Estuve ocho horas sin suministro, ¿me compensáis?",
+    "¿Qué importe corresponde por hora de interrupción?",
+    "¿Hay un máximo en la compensación por corte?",
+    "¿Tengo que pedir la compensación o me la aplicáis sola?",
+    "¿Los cortes avisados también se compensan?",
+    "¿Cuándo veré la compensación en la factura?",
+    "El corte duró cinco horas, ¿entra en la compensación?",
+    "¿Cómo se calcula lo que me devolvéis por un corte largo?",
+    "¿Los cortes programados dan derecho a algo?"
+   ],
+   "respuestas": [
+    "Si el corte dura más de seis horas seguidas, tiene derecho a una compensación automática en la factura siguiente, sin tener que pedirla. Es de 5 € por cada hora completa a partir de la sexta, con un máximo de 50 € por episodio.",
+    "Con cinco horas no hay compensación: el derecho nace a partir de la sexta hora seguida. Con ocho horas corresponden las dos horas completas por encima de la sexta.",
+    "No se compensan los cortes programados que se avisan con al menos cuarenta y ocho horas de antelación. Los demás, a partir de seis horas, se compensan solos en la factura siguiente."
+   ]
+  },
+  {
+   "id": "oficina_virtual",
+   "preguntas": [
+    "¿Cómo entro por primera vez en la oficina virtual?",
+    "He olvidado la clave de acceso, ¿cómo la recupero?",
+    "El correo que tenía en el contrato ya no existe, ¿qué hago?",
+    "¿Puede entrar mi pareja con su propia clave?",
+    "¿Qué se puede hacer desde la oficina virtual?",
+    "¿Necesito el número de contrato para registrarme?",
+    "¿Puedo autorizar a otra persona para gestionar mi contrato?",
+    "¿Quién puede retirar una autorización de acceso?",
+    "¿Desde la web se ven los pagos hechos?",
+    "¿Hasta cuántos años atrás llegan las facturas en la web?"
+   ],
+   "respuestas": [
+    "Con el código universal del punto de suministro y el número de contrato se puede entrar por primera vez y crear la clave. Desde dentro se consultan las facturas de los últimos cinco años, la curva horaria, los pagos y el estado de cada solicitud.",
+    "Si se olvida la clave, se recupera con el correo que figura en el contrato. Cuando ese correo ya no existe, el cambio solo se puede hacer en la oficina, porque es el único sitio donde se comprueba la identidad de quien lo pide.",
+    "La oficina virtual admite varias personas autorizadas por contrato, cada una con su clave. La persona titular es la única que puede dar de alta o retirar esas autorizaciones."
+   ]
+  },
+  {
+   "id": "cambio_tarifa_datos",
+   "preguntas": [
+    "¿Tiene algún coste cambiarse de tarifa?",
+    "Quiero cambiar la cuenta bancaria del recibo",
+    "¿Cuánto tarda en aplicarse un cambio de cuenta?",
+    "¿Cada cuánto puedo cambiar de tarifa?",
+    "¿Avisáis si me conviene otra tarifa distinta?",
+    "Quiero actualizar mi correo de aviso",
+    "¿El cambio de dirección postal es inmediato?",
+    "¿Puedo cambiar de tarifa y de potencia a la vez?",
+    "¿Desde cuándo me aplicáis la tarifa nueva?",
+    "¿Tengo que ir a la oficina para cambiar mis datos de contacto?"
+   ],
+   "respuestas": [
+    "El cambio de tarifa se puede solicitar una vez cada doce meses y es gratuito. Tiene efecto en el periodo de facturación siguiente, porque la modificación la confirma antes la distribuidora.",
+    "Cambiar la cuenta bancaria, el correo de aviso y la dirección postal tiene efecto inmediato y se hace desde la oficina virtual, sin pasar por la oficina.",
+    "La cooperativa avisa cuando la tarifa contratada no es la que menos habría costado con el consumo real del último año. El cambio de tarifa y el de potencia se pueden pedir en la misma solicitud."
+   ]
+  },
+  {
+   "id": "vida_cooperativa",
+   "preguntas": [
+    "¿Qué aportación hay que desembolsar al hacerse socio?",
+    "¿Vale más el voto de quien más consume?",
+    "¿Se devuelve la aportación si me doy de baja?",
+    "¿Cuándo es la asamblea anual?",
+    "¿Qué se decide en la asamblea?",
+    "¿La aportación al capital da intereses?",
+    "¿Quién aprueba las tarifas del año siguiente?",
+    "¿Puedo votar si acabo de entrar como socio?",
+    "¿Quién decide el fondo anual de ayudas?",
+    "¿Cuántos votos tiene cada persona socia?"
+   ],
+   "respuestas": [
+    "Cada persona socia tiene un voto en la asamblea, con independencia del consumo y de la aportación al capital social. La aportación mínima para ser socia es de 60 €, se devuelve íntegra al causar baja y no genera intereses.",
+    "La asamblea ordinaria se celebra una vez al año, en el primer semestre, y es donde se aprueban las cuentas, el fondo anual de ayudas y las tarifas del ejercicio siguiente.",
+    "Son 60 € de aportación mínima, reintegrables al darse de baja. El voto es el mismo para todos: una persona, un voto, sin que influya lo que cada uno consume."
+   ]
+  },
+  {
+   "id": "energia_renovable",
+   "preguntas": [
+    "¿La luz que me vendéis es renovable?",
+    "¿Tenéis certificado de origen de la energía?",
+    "Mi empresa me pide acreditar el origen renovable, ¿me lo dais?",
+    "¿Dónde descargo el certificado de garantías de origen?",
+    "¿Toda la energía que suministráis tiene garantía de origen?",
+    "¿El certificado es anual?",
+    "¿Sirve vuestro certificado para una memoria de sostenibilidad?",
+    "¿Puedo justificar con vosotros que consumo energía verde?",
+    "¿Las garantías de origen cubren también a los negocios?",
+    "¿Hay que pedir el certificado o está disponible sin más?"
+   ],
+   "respuestas": [
+    "Toda la energía que la cooperativa suministra a sus socias está respaldada por garantías de origen renovable. El certificado anual se descarga en la oficina virtual.",
+    "El certificado es el documento que piden las empresas para su propia memoria de sostenibilidad, y está disponible en la oficina virtual sin tener que solicitarlo.",
+    "Sí, cubre todo el suministro, también el de los negocios. Es anual y se descarga directamente desde el apartado de documentos de la oficina virtual."
+   ]
+  }
+ ]
+}
