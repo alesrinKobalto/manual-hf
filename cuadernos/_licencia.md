@@ -6,13 +6,15 @@ El **código** de este cuaderno se publica bajo **Apache 2.0**: puedes reutiliza
 también en proyectos comerciales, conservando los avisos de copyright y de licencia.
 
 El **texto** (explicaciones, comentarios y resultados comentados) se publica bajo
-**CC BY 4.0**: puedes copiarlo, adaptarlo y usarlo comercialmente **siempre que cites
-la fuente, enlaces la licencia e indiques si has hecho cambios**.
+**CC BY-SA 4.0**: puedes copiarlo, adaptarlo y usarlo comercialmente **siempre que
+cites la fuente, enlaces la licencia, indiques si has hecho cambios y publiques lo que
+derives de él con esa misma licencia** o con una compatible. Es el *compartir igual*:
+lo que sale de un material didáctico abierto sigue abierto.
 
 **La atribución es obligatoria en los dos casos.** Texto para copiar:
 
 > Basado en *Crea tu propia IA con modelos de código abierto de Hugging Face*,
 > de Alejandra Espinosa (Kobalto Educación, 2026) —
-> https://kobalto.es/biblioteca/ — Código Apache 2.0, texto CC BY 4.0.
+> https://kobalto.es/biblioteca/ — Código Apache 2.0, texto CC BY-SA 4.0.
 
 © 2026 Alejandra Espinosa · Kobalto Educación
