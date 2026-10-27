@@ -24,6 +24,7 @@ Licencia: **CC BY 4.0** (los generadores, que son código, van bajo Apache 2.0).
 | `sft.jsonl` | 500 conversaciones `system`/`user`/`assistant` |
 | `eval.jsonl` | 80 preguntas de evaluación, que **nunca** se usan para entrenar |
 | `linea_base_bm25.py` | La línea base del recuperador, sin modelos y sin GPU |
+| `mide_recuperador.py` | Las tres mejoras del apartado 6.5, medidas contra esa línea base |
 
 Los PDF se versionan aunque sean binarios, porque son lo que el libro promete y lo que
 el troceado del capítulo 6 mide. Pero el original es el `.txt`: si hay que cambiar una
@@ -59,6 +60,64 @@ Que las evidencias estén **dentro de un fragmento** y no solo dentro del PDF es
 comprobación que de verdad importa: una evidencia partida entre dos fragmentos haría
 que el Recall@k del capítulo 8 no pudiera encontrarla nunca, y la culpa parecería del
 modelo de embeddings.
+
+## Lo que mide el recuperador, y lo que no mejora
+
+`linea_base_bm25.py` da la cifra contra la que se compara todo (apartado 8.3) y
+`mide_recuperador.py` mide las tres mejoras que propone el apartado 6.5. Los dos usan
+los **mismos** fragmentos, las mismas 60 preguntas y el mismo criterio de acierto —la
+evidencia anotada, literal, dentro de alguno de los k fragmentos—: lo único que cambia
+es cómo se busca. El segundo trae su propio control: si la fila de BM25 no reproduce
+30,0 / 50,0 / 63,3, hay algo roto y el resto de la tabla no significa nada.
+
+Troceando página a página (43 fragmentos):
+
+| recuperador | Recall@1 | Recall@4 | Recall@10 |
+|---|---|---|---|
+| bm25 (línea base) | 30,0 % (18/60) | 50,0 % (30/60) | 63,3 % (38/60) |
+| denso (`multilingual-e5-base`) | 35,0 % (21/60) | **66,7 %** (40/60) | 85,0 % (51/60) |
+| híbrido (RRF, k=60) | 40,0 % (24/60) | 60,0 % (36/60) | 78,3 % (47/60) |
+| denso + reranking (`mmarco-mMiniLMv2`, top-20) | **51,7 %** (31/60) | **71,7 %** (43/60) | 83,3 % (50/60) |
+
+Tres lecturas, con el umbral de 1,7 puntos por acierto:
+
+* **El 50,0 % que había que superar pasa a 66,7 %**: diez aciertos, muy por encima del
+  ruido. La promesa del 6.5 se cumple.
+* **Donde más se nota es en el reordenamiento**: 30,0 → 51,7 en la primera posición. Y
+  tiene explicación: solo reordena los 20 que el denso ya encontró, así que sube la
+  precisión arriba y no puede rescatar lo que no estaba. Por eso a k=10 queda en 83,3
+  frente a 85,0 del denso solo, que es **un acierto, o sea un empate**.
+* **El híbrido no mejora.** Gana en la primera posición y pierde en @4 y @10 contra el
+  denso solo. Esto **no condena la búsqueda híbrida**: condena *esta* fusión con *estos*
+  parámetros —fusión recíproca de rangos con k=60 sobre los 60 primeros de cada uno—.
+  Lo siguiente que habría que probar es ponderar en vez de fusionar por rango, o
+  fusionar solo los primeros puestos.
+
+Y con el otro troceado (41 fragmentos, documento completo) aparece algo que la línea
+base sola no deja ver:
+
+| recuperador | Recall@1 | Recall@4 | Recall@10 |
+|---|---|---|---|
+| bm25 | 31,7 % | 51,7 % | 65,0 % |
+| denso | 28,3 % | 66,7 % | 86,7 % |
+| denso + reranking | 46,7 % | 71,7 % | 86,7 % |
+
+Con BM25, el documento completo gana en los tres k. **Con un recuperador bueno se da la
+vuelta en la primera posición** —35,0 frente a 28,3 en denso; 51,7 frente a 46,7 con
+reranking— y **empatan exactamente en @4**, 40/60 los dos y 43/60 los dos. Es decir:
+*qué troceado gana depende del recuperador con el que lo midas*, y compararlos con el
+buscador más tonto puede llevar a la conclusión contraria.
+
+Estas dos tablas están **medidas en CPU**, sin GPU, con las versiones que fija el libro
+(`sentence-transformers` 6.1.0, `transformers` 5.19.0) y repetidas con 6.2.0 y 5.21.0:
+salen idénticas. Para reproducirlas:
+
+    pip install -r requirements-datos.txt -r requirements-medir.txt
+    python datos/cooperativa/mide_recuperador.py
+    python datos/cooperativa/mide_recuperador.py --documento-completo
+
+No entran en `pytest` a propósito: las pruebas tienen que correr sin descargar 1,5 GB de
+pesos. Lo que sí vigila `pytest` es la línea base, que no necesita modelos.
 
 ## La contaminación no fue hipotética
 

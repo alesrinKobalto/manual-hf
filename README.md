@@ -81,6 +81,7 @@ repositorio sigue la misma regla. Lo que no se ha podido ejecutar, se dice:
 | Línea base del recuperador | `datos/cooperativa/linea_base_bm25.py` | Ejecutado: las cifras de las pruebas salen de ahí |
 | Generadores del dataset y de los cuadernos | `pytest` compara byte a byte | Ejecutado: regeneran idéntico |
 | Versiones fijadas | `herramientas/vigila_versiones.py`, cada lunes | Ejecutado contra PyPI |
+| Las tres mejoras del apartado 6.5 (embeddings, híbrido, reranking) | `datos/cooperativa/mide_recuperador.py`, en CPU | Ejecutado: las dos tablas de la ficha del dataset, con las versiones fijadas y repetidas con otras |
 | `indexar.py`, `entrenar.py`, `evaluar.py --responder`, `app.py` | Exigen descargar modelos, y `entrenar.py` una GPU | **No ejecutados en la integración continua**; el código es el de los capítulos 6, 7, 8 y 9, ejecutado al escribirlos |
 
 Esa última fila es la razón de que los cuadernos de Kaggle existan: ahí ese código sí

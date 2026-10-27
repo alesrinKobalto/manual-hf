@@ -1,0 +1,15 @@
+# Para `datos/cooperativa/mide_recuperador.py`, que compara la línea base BM25 con
+# los embeddings, la búsqueda híbrida y el reranking del apartado 6.5.
+#
+# Descarga unos 1,5 GB de pesos la primera vez y corre en CPU: las 60 preguntas
+# contra 43 fragmentos tardan un par de minutos, sin GPU.
+#
+#     pip install -r requirements-datos.txt -r requirements-medir.txt
+#     python datos/cooperativa/mide_recuperador.py
+#
+# Las versiones son las que fija el libro. Medido también con sentence-transformers
+# 6.2.0 y transformers 5.21.0: las cifras salen idénticas.
+
+torch>=2.14,<3            # la rueda de CPU basta: --index-url https://download.pytorch.org/whl/cpu
+sentence-transformers==6.1.0
+transformers==5.19.0
